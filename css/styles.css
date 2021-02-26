@@ -201,13 +201,13 @@ body {
 .logo.footer,
 .address-item {
 	color: var(--footer-logo-color);
+	text-decoration: none;
 }
 
 .address {
 	font-style: normal;
 	line-height: 24px; /* or 171% */
 	letter-spacing: 0.03em;
-	text-decoration: none;
 }
 
 .address .link {
