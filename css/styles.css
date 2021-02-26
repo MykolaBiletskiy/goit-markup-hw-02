@@ -17,8 +17,8 @@ body {
 	background-color: var(--first-background-color);
 	font-family: "Roboto", "Arial", "Verdana", sans-serif;
 	font-style: normal;
-    	font-weight: 400;
-    	font-size: 14px;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .link {
@@ -120,12 +120,23 @@ body {
 }
 
 /* TODO:  invisible heading */
-.section-title.invisible {
-	color: rgba(0, 0, 0, 0.1);
-}
+.section-title.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+  }
 
 .feature-list .title {
 	font-weight: 700;
+	font-size: 14px;
 	line-height: 16px;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
@@ -190,6 +201,7 @@ body {
 .logo.footer,
 .address-item {
 	color: var(--footer-logo-color);
+	text-decoration: none;
 }
 
 .address {
